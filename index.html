@@ -3,160 +3,1037 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#160b18">
+
+<meta name="theme-color" content="#100912">
+
 <title>Happy Birthday Nisha ❤️</title>
+
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-  font-family:Georgia,"Times New Roman",serif;
-  background:#100912;color:#fff;overflow-x:hidden;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-body:before{
-  content:"";position:fixed;inset:0;z-index:-2;
-  background:
-    radial-gradient(circle at 20% 10%,rgba(255,99,166,.22),transparent 30%),
-    radial-gradient(circle at 80% 40%,rgba(184,83,255,.18),transparent 32%),
-    linear-gradient(145deg,#100912,#24101f 55%,#120812);
+
+html {
+    scroll-behavior: smooth;
 }
-.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:35px 20px;position:relative}
-.hero-inner{max-width:850px;animation:fade .9s ease}
-.eyebrow{letter-spacing:4px;text-transform:uppercase;color:#ffc3dc;font:600 12px Arial,sans-serif}
-h1{font-size:clamp(52px,12vw,105px);line-height:.95;margin:18px 0;background:linear-gradient(90deg,#fff,#ffb4d2,#fff);-webkit-background-clip:text;color:transparent}
-.hero p{font-size:clamp(18px,3vw,25px);color:#f9dce9;line-height:1.6}
-.scroll{display:inline-block;margin-top:42px;padding:12px 22px;border:1px solid #ffffff40;border-radius:999px;color:#fff;text-decoration:none;font:14px Arial,sans-serif}
-section{padding:80px 20px;max-width:1050px;margin:auto}
-.title{text-align:center;font-size:42px;margin-bottom:14px}
-.sub{text-align:center;color:#dcbcca;margin-bottom:42px;font:16px Arial,sans-serif}
-.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-.card{background:#ffffff0d;border:1px solid #ffffff18;border-radius:24px;padding:9px;box-shadow:0 15px 45px #0005}
-.card img{width:100%;height:390px;object-fit:cover;border-radius:18px;display:block}
-.card:nth-child(3){grid-column:1/-1}
-.card:nth-child(3) img{height:520px}
-.letter{background:#ffffff0b;border:1px solid #ffffff18;border-radius:28px;padding:38px;line-height:2;font-size:19px;color:#f9e8ef;box-shadow:0 20px 60px #0005}
-.letter p{margin-bottom:18px}
-.highlight{color:#ffaccb}
-.signature{text-align:right;color:#ffc4dc;font-style:italic;margin-top:25px}
-.memories{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:35px}
-.memory{padding:25px;border-radius:22px;background:#ffffff0b;border:1px solid #ffffff16;text-align:center}
-.memory .emoji{font-size:35px;margin-bottom:12px}
-.memory h3{margin-bottom:8px}
-.memory p{font:14px/1.7 Arial,sans-serif;color:#d9c7d0}
-.final{text-align:center;min-height:75vh;display:flex;flex-direction:column;justify-content:center}
-.final h2{font-size:clamp(42px,8vw,75px);color:#ffb3d0}
-.final p{margin:20px auto;max-width:650px;color:#ead5df;font-size:19px;line-height:1.8}
-.heart{font-size:48px;animation:pulse 1.4s infinite}
-button{border:0;border-radius:999px;padding:15px 28px;background:linear-gradient(135deg,#ff4f9a,#b76cff);color:white;font-weight:bold;font-size:16px;cursor:pointer}
-#secret{display:none;margin:28px auto 0;max-width:620px;padding:25px;border-radius:22px;background:#ff4f9a18;border:1px solid #ff9fc455;line-height:1.8}
-footer{text-align:center;padding:25px;color:#9f8995;font:12px Arial,sans-serif}
-.float{position:fixed;bottom:-30px;pointer-events:none;animation:rise linear forwards;z-index:5}
-@keyframes rise{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
-@keyframes pulse{50%{transform:scale(1.15)}}
-@keyframes fade{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
-@media(max-width:700px){
- .gallery{grid-template-columns:1fr}.card:nth-child(3){grid-column:auto}
- .card img,.card:nth-child(3) img{height:420px}
- .letter{padding:25px;font-size:17px}
- .memories{grid-template-columns:1fr}
- section{padding:65px 16px}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #100912;
+    color: white;
+    overflow-x: hidden;
 }
+
+/* Background */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+
+    background:
+        radial-gradient(
+            circle at 20% 10%,
+            rgba(255, 99, 166, 0.22),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 80% 40%,
+            rgba(184, 83, 255, 0.18),
+            transparent 32%
+        ),
+        linear-gradient(
+            145deg,
+            #100912,
+            #24101f 55%,
+            #120812
+        );
+}
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 35px 20px;
+
+    position: relative;
+}
+
+.hero-inner {
+    max-width: 850px;
+
+    animation: fadeIn 1s ease;
+}
+
+.eyebrow {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: #ffc3dc;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: clamp(52px, 12vw, 105px);
+
+    line-height: 0.95;
+
+    margin: 18px 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ffffff,
+            #ffb4d2,
+            #ffffff
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+.highlight {
+    color: #ffaccb;
+}
+
+.hero p {
+    font-size: clamp(18px, 3vw, 25px);
+
+    color: #f9dce9;
+
+    line-height: 1.6;
+}
+
+.scroll {
+    display: inline-block;
+
+    margin-top: 42px;
+
+    padding: 12px 22px;
+
+    border: 1px solid rgba(255,255,255,0.25);
+
+    border-radius: 999px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.scroll:hover {
+    background: rgba(255,255,255,0.1);
+    transform: translateY(-3px);
+}
+
+
+/* SECTIONS */
+
+section {
+    padding: 80px 20px;
+
+    max-width: 1050px;
+
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+
+    font-size: 42px;
+
+    margin-bottom: 14px;
+}
+
+.sub {
+    text-align: center;
+
+    color: #dcbcca;
+
+    margin-bottom: 42px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+}
+
+
+/* PHOTO GALLERY */
+
+.gallery {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 22px;
+
+    align-items: start;
+}
+
+.card {
+
+    background: rgba(255,255,255,0.06);
+
+    border: 1px solid rgba(255,255,255,0.14);
+
+    border-radius: 24px;
+
+    padding: 9px;
+
+    box-shadow:
+        0 15px 45px rgba(0,0,0,0.35);
+
+    overflow: hidden;
+}
+
+.card img {
+
+    width: 100%;
+
+    height: auto;
+
+    /*
+       IMPORTANT:
+       This prevents the photos from being cropped.
+    */
+
+    object-fit: contain;
+
+    display: block;
+
+    border-radius: 18px;
+
+    transition: transform 0.5s ease;
+}
+
+.card:hover img {
+
+    transform: scale(1.02);
+}
+
+
+/* LETTER */
+
+.letter {
+
+    background: rgba(255,255,255,0.06);
+
+    border: 1px solid rgba(255,255,255,0.12);
+
+    border-radius: 28px;
+
+    padding: 38px;
+
+    line-height: 2;
+
+    font-size: 19px;
+
+    color: #f9e8ef;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.35);
+}
+
+.letter p {
+
+    margin-bottom: 18px;
+}
+
+.signature {
+
+    text-align: right;
+
+    color: #ffc4dc;
+
+    font-style: italic;
+
+    margin-top: 25px;
+}
+
+
+/* MEMORY CARDS */
+
+.memories {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 16px;
+
+    margin-top: 35px;
+}
+
+.memory {
+
+    padding: 25px;
+
+    border-radius: 22px;
+
+    background: rgba(255,255,255,0.06);
+
+    border: 1px solid rgba(255,255,255,0.10);
+
+    text-align: center;
+}
+
+.memory .emoji {
+
+    font-size: 35px;
+
+    margin-bottom: 12px;
+}
+
+.memory h3 {
+
+    margin-bottom: 8px;
+}
+
+.memory p {
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    color: #d9c7d0;
+}
+
+
+/* FINAL SECTION */
+
+.final {
+
+    text-align: center;
+
+    min-height: 75vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.final h2 {
+
+    font-size: clamp(42px, 8vw, 75px);
+
+    color: #ffb3d0;
+
+    margin-top: 15px;
+}
+
+.final p {
+
+    margin: 20px auto;
+
+    max-width: 650px;
+
+    color: #ead5df;
+
+    font-size: 19px;
+
+    line-height: 1.8;
+}
+
+
+/* BUTTON */
+
+button {
+
+    border: none;
+
+    border-radius: 999px;
+
+    padding: 15px 28px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff4f9a,
+            #b76cff
+        );
+
+    color: white;
+
+    font-weight: bold;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 30px rgba(255,79,154,0.25);
+
+    transition: 0.3s;
+}
+
+button:hover {
+
+    transform: scale(1.06);
+
+    box-shadow:
+        0 15px 40px rgba(255,79,154,0.4);
+}
+
+
+/* SECRET MESSAGE */
+
+#secret {
+
+    display: none;
+
+    margin: 28px auto 0;
+
+    max-width: 620px;
+
+    padding: 25px;
+
+    border-radius: 22px;
+
+    background: rgba(255,79,154,0.10);
+
+    border: 1px solid rgba(255,159,196,0.35);
+
+    line-height: 1.8;
+
+    animation: fadeIn 1s ease;
+}
+
+
+/* HEART */
+
+.heart {
+
+    font-size: 48px;
+
+    animation: pulse 1.4s infinite;
+}
+
+
+/* FLOATING HEARTS */
+
+.float {
+
+    position: fixed;
+
+    bottom: -30px;
+
+    pointer-events: none;
+
+    animation:
+        rise linear forwards;
+
+    z-index: 999;
+}
+
+
+/* FOOTER */
+
+footer {
+
+    text-align: center;
+
+    padding: 25px;
+
+    color: #9f8995;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+}
+
+
+/* ANIMATIONS */
+
+@keyframes rise {
+
+    to {
+
+        transform:
+            translateY(-110vh)
+            rotate(360deg);
+
+        opacity: 0;
+    }
+}
+
+@keyframes pulse {
+
+    50% {
+
+        transform: scale(1.15);
+    }
+}
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(20px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    section {
+
+        padding: 65px 16px;
+    }
+
+    .gallery {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    /*
+       Natural image height on mobile.
+       Nothing gets cropped.
+    */
+
+    .card img {
+
+        width: 100%;
+
+        height: auto;
+
+        object-fit: contain;
+    }
+
+    .letter {
+
+        padding: 25px;
+
+        font-size: 17px;
+    }
+
+    .memories {
+
+        grid-template-columns: 1fr;
+    }
+
+    .title {
+
+        font-size: 34px;
+    }
+}
+
 </style>
 </head>
+
+
 <body>
 
+
+<!-- ========================= -->
+<!-- HERO -->
+<!-- ========================= -->
+
 <div class="hero">
-  <div class="hero-inner">
-    <div class="eyebrow">A little something made just for you</div>
-    <h1>Happy Birthday<br><span class="highlight">Nisha ❤️</span></h1>
-    <p>To the girl whose smile somehow makes ordinary moments feel like memories.</p>
-    <a class="scroll" href="#photos">Scroll down ↓</a>
-  </div>
+
+    <div class="hero-inner">
+
+        <div class="eyebrow">
+            A little something made just for you
+        </div>
+
+        <h1>
+
+            Happy Birthday
+
+            <br>
+
+            <span class="highlight">
+                Nisha ❤️
+            </span>
+
+        </h1>
+
+        <p>
+
+            To the girl whose smile somehow
+            makes ordinary moments feel like memories.
+
+        </p>
+
+        <a
+            class="scroll"
+            href="#photos"
+        >
+
+            Scroll down ↓
+
+        </a>
+
+    </div>
+
 </div>
 
+
+
+<!-- ========================= -->
+<!-- PHOTOS -->
+<!-- ========================= -->
+
 <section id="photos">
-  <h2 class="title">Our little world 📸</h2>
-  <p class="sub">Five moments I never want to forget.</p>
-  <div class="gallery">
-    <div class="card"><img src="photo1.jpg" alt="A memory together"></div>
-    <div class="card"><img src="photo2.jpg" alt="A memory together"></div>
-    <div class="card"><img src="photo3.jpg" alt="A memory together"></div>
-    <div class="card"><img src="photo4.jpg" alt="A memory together"></div>
-    <div class="card"><img src="photo5.jpg" alt="A memory together"></div>
-  </div>
+
+    <h2 class="title">
+        Our Little World 📸
+    </h2>
+
+    <p class="sub">
+
+        Five moments I never want to forget.
+
+    </p>
+
+
+    <div class="gallery">
+
+
+        <div class="card">
+
+            <img
+                src="photo1.jpg"
+                alt="A beautiful memory together"
+            >
+
+        </div>
+
+
+        <div class="card">
+
+            <img
+                src="photo2.jpg"
+                alt="A beautiful memory together"
+            >
+
+        </div>
+
+
+        <div class="card">
+
+            <img
+                src="photo3.jpg"
+                alt="A beautiful memory together"
+            >
+
+        </div>
+
+
+        <div class="card">
+
+            <img
+                src="photo4.jpg"
+                alt="A beautiful memory together"
+            >
+
+        </div>
+
+
+        <div class="card">
+
+            <img
+                src="photo5.jpg"
+                alt="A beautiful memory together"
+            >
+
+        </div>
+
+
+    </div>
+
 </section>
 
-<section>
-  <h2 class="title">A letter for you 💌</h2>
-  <p class="sub">Read this slowly.</p>
-  <div class="letter">
-    <p>Dear <span class="highlight">Nisha</span>,</p>
-    <p>
-      Today is your birthday, but I feel like I am the lucky one who gets a
-      reason to celebrate you.
-    </p>
-    <p>
-      Thank you for all the laughs, the silly moments, the conversations,
-      the little looks, the adventures, and all the memories we have made
-      together. Somehow, even the simplest days become special when you're
-      there.
-    </p>
-    <p>
-      I hope this year gives you countless reasons to smile, the courage to
-      chase everything you want, and all the happiness you deserve.
-    </p>
-    <p>
-      And selfishly, I hope I get to be beside you for many more birthdays,
-      taking terrible photos, laughing at stupid things, going on little
-      adventures and making memories that we'll talk about years from now.
-    </p>
-    <p>
-      <span class="highlight">Happy Birthday, my love. ❤️</span>
-    </p>
-    <div class="signature">— Prajan ❤️</div>
-  </div>
-</section>
+
+
+<!-- ========================= -->
+<!-- LETTER -->
+<!-- ========================= -->
 
 <section>
-  <h2 class="title">Things I love about us ✨</h2>
-  <div class="memories">
-    <div class="memory"><div class="emoji">😂</div><h3>The laughter</h3><p>The random moments that somehow become the funniest memories.</p></div>
-    <div class="memory"><div class="emoji">❤️</div><h3>The little things</h3><p>The looks, gestures and tiny moments that mean more than words.</p></div>
-    <div class="memory"><div class="emoji">🌍</div><h3>The adventures</h3><p>Every place feels a little better when I'm experiencing it with you.</p></div>
-  </div>
+
+    <h2 class="title">
+        A Letter For You 💌
+    </h2>
+
+    <p class="sub">
+        Read this slowly.
+    </p>
+
+
+    <div class="letter">
+
+
+        <p>
+
+            Dear
+            <span class="highlight">
+                Nisha
+            </span>,
+
+        </p>
+
+
+        <p>
+
+            Today is your birthday,
+            but I feel like I am the lucky one
+            who gets a reason to celebrate you.
+
+        </p>
+
+
+        <p>
+
+            Thank you for all the laughs,
+            the silly moments,
+            the conversations,
+            the little looks,
+            the adventures,
+            and all the memories
+            we have made together.
+
+            Somehow,
+            even the simplest days
+            become special when you're there.
+
+        </p>
+
+
+        <p>
+
+            I hope this year gives you
+            countless reasons to smile,
+            the courage to chase everything
+            you want,
+            and all the happiness you deserve.
+
+        </p>
+
+
+        <p>
+
+            And selfishly,
+            I hope I get to be beside you
+            for many more birthdays.
+
+            Taking terrible photos,
+            laughing at stupid things,
+            going on little rides on our own dududududu,
+            and making memories
+            that we'll talk about years from now.
+
+        </p>
+
+
+        <p>
+
+            <span class="highlight">
+
+                Happy Birthday, my love. ❤️
+
+            </span>
+
+        </p>
+
+
+        <div class="signature">
+
+            — Prajan ❤️
+
+        </div>
+
+
+    </div>
+
 </section>
+
+
+
+<!-- ========================= -->
+<!-- THINGS I LOVE -->
+<!-- ========================= -->
+
+<section>
+
+    <h2 class="title">
+
+        Things I Love About Us ✨
+
+    </h2>
+
+
+    <div class="memories">
+
+
+        <div class="memory">
+
+            <div class="emoji">
+                😂
+            </div>
+
+            <h3>
+                The laughter
+            </h3>
+
+            <p>
+
+                The random moments
+                that somehow become
+                the funniest memories.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="memory">
+
+            <div class="emoji">
+                ❤️
+            </div>
+
+            <h3>
+                The little things
+            </h3>
+
+            <p>
+
+                The looks,
+                gestures and tiny moments
+                that mean more than words.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="memory">
+
+            <div class="emoji">
+                🌍
+            </div>
+
+            <h3>
+                The adventures
+            </h3>
+
+            <p>
+
+                Every place feels
+                a little better when I'm
+                experiencing it with you. Q k tuhiiiii nusta nusta pyaar karti.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ========================= -->
+<!-- FINAL -->
+<!-- ========================= -->
 
 <section class="final">
-  <div class="heart">❤️</div>
-  <h2>One last thing, Nisha...</h2>
-  <p>
-    You are one of the most beautiful chapters of my life, and I can't wait
-    to see what the next chapters bring.
-  </p>
-  <button onclick="showSecret()">Tap for a tiny surprise 💕</button>
-  <div id="secret">
-    If I could replay one thing forever, it wouldn't be one particular photo.
-    It would be the feeling of being with you. ❤️<br><br>
-    <strong>Happy Birthday, Nisha. Here's to us. 🥂</strong>
-  </div>
+
+
+    <div class="heart">
+
+        ❤️
+
+    </div>
+
+
+    <h2>
+
+        One Last Thing, Sonuuu....
+
+    </h2>
+
+
+    <p>
+
+        You are one of the most beautiful
+        chapters of my life,
+        and I can't wait to see
+        what the next chapters bring.
+
+    </p>
+
+
+    <button onclick="showSecret()">
+
+        Tap For A Tiny Surprise 💕
+
+    </button>
+
+
+    <div id="secret">
+
+        If I could replay one thing forever,
+        it wouldn't be one particular photo.
+
+        It would be the feeling
+        of being with you. ❤️
+
+        <br>
+        <br>
+
+        <strong>
+
+            Happy Birthday, Mera Pyaara sa Baabuuuuuu
+            Here's to us. 🥂
+
+        </strong>
+
+    </div>
+
+
 </section>
 
-<footer>Made with love by Prajan ❤️</footer>
+
+
+<footer>
+
+    Made with love by Prajan ❤️
+
+</footer>
+
+
+
+<!-- ========================= -->
+<!-- JAVASCRIPT -->
+<!-- ========================= -->
 
 <script>
-function showSecret(){
-  document.getElementById("secret").style.display="block";
-  for(let i=0;i<35;i++){
-    const h=document.createElement("div");
-    h.className="float";
-    h.textContent=["❤️","💖","💕","✨","💗"][Math.floor(Math.random()*5)];
-    h.style.left=Math.random()*100+"vw";
-    h.style.fontSize=(16+Math.random()*25)+"px";
-    h.style.animationDuration=(2+Math.random()*3)+"s";
-    document.body.appendChild(h);
-    setTimeout(()=>h.remove(),5500);
-  }
-  document.getElementById("secret").scrollIntoView({behavior:"smooth",block:"center"});
+
+function showSecret() {
+
+    const secret =
+        document.getElementById("secret");
+
+    secret.style.display = "block";
+
+
+    /*
+       Create floating hearts
+    */
+
+    for (let i = 0; i < 35; i++) {
+
+        const heart =
+            document.createElement("div");
+
+
+        heart.className = "float";
+
+
+        heart.textContent =
+            [
+                "❤️",
+                "💖",
+                "💕",
+                "✨",
+                "💗"
+            ][
+                Math.floor(
+                    Math.random() * 5
+                )
+            ];
+
+
+        heart.style.left =
+            Math.random() * 100 + "vw";
+
+
+        heart.style.fontSize =
+            (16 + Math.random() * 25) + "px";
+
+
+        heart.style.animationDuration =
+            (2 + Math.random() * 3) + "s";
+
+
+        document.body.appendChild(heart);
+
+
+        setTimeout(
+            () => heart.remove(),
+            5500
+        );
+
+    }
+
+
+    /*
+       Scroll to surprise
+    */
+
+    setTimeout(() => {
+
+        secret.scrollIntoView({
+
+            behavior: "smooth",
+
+            block: "center"
+
+        });
+
+    }, 200);
+
 }
+
 </script>
+
+
 </body>
 </html>
